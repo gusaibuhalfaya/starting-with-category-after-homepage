@@ -1,4 +1,4 @@
-ActiveAdmin.register Product do
+ActiveAdmin.register Category do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,10 +11,5 @@ ActiveAdmin.register Product do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-# permit_params do
-#    params = [:title, :subtitle, :image_name, :sku, :download_url, :details, :description, :price, :info]
-#    params.push :author_id if current_user.admin?
-#   params
-#  end
-permit_params :title, :subtitle, :image_name, :sku, :download_url, :details, :description, :price, :info, :category_id
+
 end
